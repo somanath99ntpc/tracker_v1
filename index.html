@@ -54,10 +54,46 @@
       width: 250px !important;
       height: 250px !important;
     }
+    /* Dark mode styles */
+    body.dark {
+      background-color: #121212;
+      color: #ddd;
+    }
+    body.dark h2 {
+      color: #a3c5ff;
+      border-color: #a3c5ff;
+    }
+    body.dark h3 {
+      color: #74a8ff;
+    }
+    body.dark label span {
+      color: #ddd;
+    }
+    body.dark input[type="checkbox"] {
+      accent-color: #74a8ff;
+    }
+
+    /* Dark mode toggle button */
+    #darkModeToggle {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      background: #3a8dd5;
+      border: none;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      z-index: 1000;
+      user-select: none;
+    }
   </style>
 </head>
 <body>
 
+<button id="darkModeToggle">🌙 Dark Mode</button>
+  
 <div class="progress">
   <canvas id="chartTheory" class="chart" width="75" height="75"></canvas>
   <canvas id="chartNumericals" class="chart" width="75" height="75"></canvas>
@@ -486,6 +522,27 @@
   );
 
   updateCharts();
+
+  // DARK MODE TOGGLE LOGIC
+  const toggleButton = document.getElementById('darkModeToggle');
+  const body = document.body;
+
+  // Load saved mode on page load
+  if(localStorage.getItem('darkMode') === 'enabled'){
+    body.classList.add('dark');
+    toggleButton.textContent = '☀️ Light Mode';
+  }
+
+  toggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark');
+    if(body.classList.contains('dark')){
+      localStorage.setItem('darkMode', 'enabled');
+      toggleButton.textContent = '☀️ Light Mode';
+    } else {
+      localStorage.setItem('darkMode', 'disabled');
+      toggleButton.textContent = '🌙 Dark Mode';
+    }
+  });
 </script>
 </body>
 </html>
