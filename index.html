@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GATE Syllabus Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      max-width: 1200px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #2a6592;
+      border-bottom: 2px solid #2a6592;
+      padding-bottom: 4px;
+    }
+    article {
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+    h3 {
+      color: #3a8dd5;
+      margin-bottom: 8px;
+    }
+    ul {
+      list-style-type: none;
+      margin-left: 20px;
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    label span {
+      min-width: 300px;
+    }
+    .progress {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: nowrap;
+      margin-bottom: 30px;
+    }
+    .chart {
+      width: 250px !important;
+      height: 250px !important;
+    }
+  </style>
+</head>
+<body>
+
+<div class="progress">
+  <canvas id="chartTheory" class="chart" width="75" height="75"></canvas>
+  <canvas id="chartNumericals" class="chart" width="75" height="75"></canvas>
+  <canvas id="chartRevision" class="chart" width="75" height="75"></canvas>
+</div>
+
+<section>
+  <h2>Engineering Mathematics</h2>
+  <article>
+    <h3>Linear Algebra</h3>
+    <ul>
+      <li><label><span>Matrix algebra</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Systems of linear equations</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Consistency and rank</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Eigenvalue and Eigenvectors</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+    </ul>
+  </article>
+  <article>
+    <h3>Calculus</h3>
+    <ul>
+      <li><label><span>Mean value theorems</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Theorems of integral calculus</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Partial derivatives</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Maxima and minima</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Multiple integrals</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>vector identities</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>line, surface and volume integrals</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Stokes theoream</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Gauss theorem</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Green's theoream</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+    </ul>
+  </article>
+  <article>
+    <h3>Differential Equations</h3>
+    <ul>
+      <li><label><span>First order equations (linear and non linear)</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Second Order Linear differential equations with constant coefficients</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>method of variation of parameters</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Cauchy’s and Euler’s equations</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Initial and boundary value problems</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>solution of partial differential equations: Variable separable method</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+    </ul>
+  </article>
+  <article>
+    <h3>Analysis of Complex Variables</h3>
+    <ul>
+      <li><label><span>Analytic functions</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Cauchy’s integral theorem and integral formula</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Taylor’s and Laurent’s series</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Residue theorem</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Solution of integrals</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+    </ul>
+  </article>
+  <article>
+    <h3>Probability and Statistics</h3>
+    <ul>
+      <li><label><span>Sampling theorems</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>conditional probability</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>mean, median, mode, standard deviation and variance</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>random variables</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>discrete and continuous distributions</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>normal, Poisson and binomial distributions.</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+    </ul>
+  </article>
+  <article>
+    <h3>Numerical Methods</h3>
+    <ul>
+      <li><label><span>Matrix inversion</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>solutions of non-linear algebraic equations</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>iterative methods for solving differential equations</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>numerical integration</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>regression and correlation analysis</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+    </ul>
+  </article>
+</section>
+<section>
+  <h2>Electrical Circuits and Machines</h2>
+  <article>
+    <h3>Voltage and Current Sources</h3>
+    <ul>
+      <li><label><span>Independent, dependent, ideal and practical</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>v-i relationships of resistor, inductor, mutual inductance and capacitor</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>transient analysis of RLC circuits with dc excitation</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Kirchoff’s laws, mesh and nodal analysis</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>network theoreams: superposition theoream</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>network theoreams: Thevenin’s theoreams</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>network theoreams: Norton’s theoreams</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>network theoreams: maximum power transfer theorem</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>network theoreams: reciprocity theorem</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Peak-, average- and rms values of AC quantities</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>apparent-, active- and reactive powers</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>phasor analysis, impedance and admittance</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>series and parallel resonance</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>locus diagrams</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Realization of basic filters with R, L and C elements</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Transient analysis of RLC circuits with ac excitation</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>One-port and two-port networks</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>driving point impedance and admittance, open-, and short circuit parameters</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+    </ul>
+  </article>
+  <article>
+    <h3>single phase transformers</h3>
+    <ul>
+      <li><label><span>Equivalent circuit</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Phasor diagram</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>open circuit and short circuit tests</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>regulation and efficiency</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+    </ul>
+  </article>
+  <article>
+    <h3>Three phase induction motors</h3>
+    <ul>
+      <li><label><span>principle of operation</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>types</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>performance</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>torque-speed characteristics</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>no-load and blocked rotor tests</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>equivalent circuit</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>starting and speed control</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Types of losses and efficiency calculations of electric machines</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+    </ul>
+  </article>
+</section>
+<section>
+  <h2>Signals and Systems</h2>
+  <article>
+    <h3>signals and systems</h3>
+    <ul>
+      <li><label><span>Periodic Signals</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Aperiodic Signals</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Impulse signals</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span> Laplace Transforms</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Fourier Transforms</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Z-Transforms</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Transfer functions</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>frequency response of first and second order linear time invariant systems</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Impulse response of systems</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span> convolution, correlation</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3>Discrete time systems</h3>
+    <ul>
+      <li><label><span>Impulse response</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>frequency response</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>pulse transfer functions</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>DFT and FFT</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>basics of IIR and FIR filters</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+    </ul>
+  </article>
+</section>
+<section>
+  <h2>Control Systems</h2>
+  <article>
+    <h3>Control systems</h3>
+    <ul>
+      <li><label><span>Feedback principles</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Signal flow graphs</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Transient response</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Steady-state errors</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>bode plot</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>phase and Gain margin</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Routh and Nyquist criteria</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Root loci</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span> design of lead, lag and lead-lag compensators</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>state-space representation of systems</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+    </ul>
+  </article>
+  <article>
+    <h3>process control</h3>
+    <ul>
+      <li><label><span>time-delay systems</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>mechanical, hydraulic and pneumatic system components</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>synchro pair</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span> servo and stepper motors</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>servo valves</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>on-off, P, PI, PID, cascade, feed forward, and ratio controllers</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>tuning of PID controllers</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>sizing of control valves</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+    </ul>
+  </article>
+</section>
+<section>
+  <h2>Analog electronics</h2>
+  <article>
+    <h3>Analog electronics</h3>
+    <ul>
+      <li><label><span>Characteristics and applications of diode</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Characteristics and applications of Zener diode</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>BJT and MOSFET DC analysis</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Small signal analysis of transistor circuits</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Feedback amplifiers</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Characteristics of ideal and practical operational amplifiers</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Op-amp application: adder</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Op-amp application: subtractor</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Op-amp application: integrator</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Op-amp application: diffrentiator</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Op-amp application: difference amplifier</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Op-amp application: instrumentation amplifier</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Op-amp application: precision rectifier</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Op-amp application: active filters</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Op-amp application: oscillators</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Op-amp application: signal generators</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Op-amp application: voltage controlled oscillators</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Op-amp application: phase locked loop</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Sources and effects of noise and interference in electronic circuits</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+    </ul>
+  </article>
+</section>
+<section>
+  <h2>Digital electronics</h2>
+  <article>
+    <h3>Digital electronics</h3>
+    <ul>
+      <li><label><span>Combinational logic circuits</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>minimization of Boolean functions</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>IC families: TTL and CMOS</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Arithmetic circuits</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>comparators</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>schmitt trigger</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>multiviberators</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>sequential circuits</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>flip flops</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>shift registers</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>timers and counters</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>sample and hold circuit</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>multiplexers</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>ADC {successive approximation, integrating, flash and sigma-delta}</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>DAC {weighted R, R-2R ladder and current steering logic}</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Characteristics of ADC and DAC (resolution, quantization, significant bits, conversion/settling time)</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>basics of number systems</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Embedded Systems: Microprocessor and microcontroller applications</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Embedded Systems: Memory and input-output interfacing</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Basics of data acquisition systems</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Basics of distributed control systems (DCS)</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span> basics of programmable logic controllers (PLC)</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+    </ul>
+  </article>
+</section>
+<section>
+  <h2>Measurements</h2>
+  <article>
+    <h3>Measurements</h3>
+    <ul>
+      <li><label><span>SI units</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Standards (R, L, C, voltage, current and frequency)</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>systematic and random errors in measurement</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>expression of uncertainty - accuracy and precision</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>propagation of errors</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>linear and weighted regression</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>DC Bridges: wheatstone</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>DC Bridges: kelvin</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>DC Bridges: Megohm</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>AC Bridges: Maxwell</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>AC Bridges: Schering</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>AC Bridges: Anderson</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>AC Bridges: Wien</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>AC Bridges:</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>all above AC Bridges for measurement of R, L, C and frequency</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Q-meter</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Measurement of voltage, current and power in single and three phase circuits</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>ac and dc current probesr</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>true rms meters</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>voltage and current scaling</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>measurement of frequency and phase angle</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>instrument transformers</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>timer/counter</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>time, phase and frequency measurements</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>digital voltmeter</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>digital multimeter</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>oscilloscope: analog and digital</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>shielding and grounding</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+    </ul>
+  </article>
+</section>
+<section>
+  <h2>Sensors and Industrial Instrumentation</h2>
+  <article>
+    <h3>sensors and Transducers</h3>
+    <ul>
+      <li><label><span>Resistive sensors and associated signal conditioning circuits</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>capacitive sensors and associated signal conditioning circuits</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>inductive sensors and associated signal conditioning circuits</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>piezoelectric sensors and associated signal conditioning circuits</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Hall effect sensors and associated signal conditioning circuits</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Transducers: displacement (linear and angular)</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Transducers: velocity, acceleration</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Transducers: force, torque, vibration, shock</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Transducers: pressure (including low pressure)</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Transducers: flow (variable head, variable area, electromagnetic, ultrasonic, turbine and open channel flow meters)</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Transducers: temperature (thermocouple, bolometer, RTD (3/4 wire), thermistor, pyrometer and semiconductor)</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Transducers: liquid level, pH, conductivity and viscosity measurement</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>4-20 mA two-wire transmitter</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+    </ul>
+  </article>
+</section>
+<section>
+  <h2>Communication and Optical Instrumentation</h2>
+  <article>
+    <h3>Communication</h3>
+    <ul>
+      <li><label><span>Amplitude- and frequency modulation and demodulation</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Shannon's sampling theorem</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>pulse code modulation</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>frequency and time division multiplexing</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>digital modulation: amplitude shift keying</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>digital modulation: phase shift keying</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>digital modulation: frequency shift keying</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>digital modulation: quadrature shift keying</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>digital modulation: pulse shift keying</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+    </ul>
+  </article>
+  <article>
+    <h3>Optics</h3>
+    <ul>
+      <li><label><span>sources and detectors: LED and characteristics</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>sources and detectors: Laser and characteristics</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>sources and detectors: Photo-diode and characteristics</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>sources and detectors: Light dependent resistor and characteristics</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>sources and detectors: Square law detectors and characteristics</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Interferometer and its applications in metrology</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>basics of fiber optic sensing</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>UV-VIS Spectrophotometers</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+      <li><label><span>Mass spectrometer</span><input type="checkbox" data-type="theory">Theory<input type="checkbox" data-type="numerical">Numericals<input type="checkbox" data-type="revision">Revision</label></li>
+    </ul>
+  </article>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+  function loadProgress() {
+    checkboxes.forEach((cb, idx) => {
+      const stored = localStorage.getItem('syllabus_' + idx);
+      cb.checked = stored === 'true';
+    });
+  }
+
+  function saveProgress() {
+    checkboxes.forEach((cb, idx) => {
+      localStorage.setItem('syllabus_' + idx, cb.checked);
+    });
+    updateCharts();
+  }
+
+  function countByType(type) {
+    const ofType = Array.from(document.querySelectorAll(`input[data-type="${type}"]`));
+    const checked = ofType.filter(cb => cb.checked).length;
+    return [checked, ofType.length - checked];
+  }
+
+  function updateCharts() {
+    const theory = countByType('theory');
+    const numerical = countByType('numerical');
+    const revision = countByType('revision');
+
+    chartTheory.data.datasets[0].data = theory;
+    chartNumericals.data.datasets[0].data = numerical;
+    chartRevision.data.datasets[0].data = revision;
+
+    chartTheory.options.plugins.title.text = `Theory: ${Math.round((theory[0] / (theory[0] + theory[1] || 1)) * 100)}%`;
+    chartNumericals.options.plugins.title.text = `Numericals: ${Math.round((numerical[0] / (numerical[0] + numerical[1] || 1)) * 100)}%`;
+    chartRevision.options.plugins.title.text = `Revision: ${Math.round((revision[0] / (revision[0] + revision[1] || 1)) * 100)}%`;
+
+    chartTheory.update();
+    chartNumericals.update();
+    chartRevision.update();
+  }
+
+  checkboxes.forEach(cb => cb.addEventListener('change', saveProgress));
+  loadProgress();
+
+  const chartOptions = (title) => ({
+    type: 'doughnut',
+    data: {
+      labels: ['Done', 'Remaining'],
+      datasets: [{
+        data: [0, 1],
+        backgroundColor: ['#4caf50', '#e0e0e0'],
+        borderWidth: 0
+      }]
+    },
+    options: {
+      cutout: '70%',
+      plugins: {
+        legend: { display: false },
+        tooltip: { enabled: false },
+        title: { display: true, text: title, font: { size: 12 } }
+      }
+    }
+  });
+
+  const chartTheory = new Chart(
+    document.getElementById('chartTheory').getContext('2d'),
+    chartOptions('Theory')
+  );
+  const chartNumericals = new Chart(
+    document.getElementById('chartNumericals').getContext('2d'),
+    chartOptions('Numericals')
+  );
+  const chartRevision = new Chart(
+    document.getElementById('chartRevision').getContext('2d'),
+    chartOptions('Revision')
+  );
+
+  updateCharts();
+</script>
+</body>
+</html>
